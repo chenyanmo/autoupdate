@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="android_auto_update_dialog_tip">提示</string>
+    <string name="android_auto_update_dialog_title">发现新版本</string>
+
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+
+    <string name="android_auto_update_dialog_btn_download">立即下载</string>
+    <string name="android_auto_update_dialog_btn_cancel">以后再说</string>
+    <string name="android_auto_update_dialog_btn_ingore">忽略此版本</string>
+
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+    <string name="android_auto_update_toast_no_update_detected">未检测到更新</string>
+
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+
+    <string name="accessibility_service_description">应用自动安装服务</string>
+
+    <string name="android_auto_update_dialog_btn_background">后台下载</string>
+    <string name="android_auto_update_download">正在下载</string>
+    <string name="android_auto_update_dialog_btn_download_cancel">取消</string>
+
+</resources>

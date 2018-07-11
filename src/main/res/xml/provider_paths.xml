@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <root-path
+        name="root_files"
+        path="Download/" />
+    <external-path
+        name="external_files"
+        path="Download/" />
+    <!--<external-path-->
+        <!--name="beta_external_files_path"-->
+        <!--path="Android/data/" />-->
+    <!--<external-path-->
+        <!--name="beta_external_path"-->
+        <!--path="Download/" />-->
+    <!--<external-path-->
+        <!--name="beta_external_files_path"-->
+        <!--path="Android/data/" />-->
+    <!--<external-files-path-->
+        <!--name="external_files_files"-->
+        <!--path="." />-->
+    <!--<external-cache-path-->
+        <!--name="external_cache_files"-->
+        <!--path="." />-->
+    <!--<files-path-->
+        <!--name="files_files"-->
+        <!--path="." />-->
+    <!--<cache-path-->
+        <!--name="cache_files"-->
+        <!--path="." />-->
+
+</paths>

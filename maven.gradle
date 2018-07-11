@@ -1,0 +1,45 @@
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+def isReleaseBuild() {
+    return VERSION_NAME.contains("SNAPSHOT") == false
+}
+
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            uploadArchives {
+                repositories {
+                    mavenDeployer {
+                        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+                        pom.groupId = "com.amor"
+                        pom.artifactId = POM_ARTIFACT_ID
+                        pom.version = VERSION_NAME
+
+                        repository(url: "http://maven.cuncaokeji.com/repository/release/") {
+                            authentication(userName: "chenyanmo", password: "123456")
+                        }
+                        snapshotRepository(url: "http://maven.cuncaokeji.com/repository/snapshot/") {
+                            authentication(userName: "chenyanmo", password: "123456")
+                        }
+
+                        pom.project {
+                            name "com.amor"
+                            packaging POM_PACKAGING
+                            description POM_DESCRIPTION
+
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    signing {
+        required { isReleaseBuild() && gradle.taskGraph.hasTask("uploadArchives") }
+        sign configurations.archives
+    }
+}
